@@ -15,6 +15,10 @@ a:link, a:visited, a:active {
 	text-decoration:none;
 }
 
+.logo {
+	width: 150px;
+}
+
 .container {
 	display: flex;
     flex-wrap: inherit;
@@ -89,9 +93,9 @@ a:link, a:visited, a:active {
   	background-color:transparent;
 	right:0;
 	top:0;
-	height:30px;
-	width:30px;
-	padding:20px 20px;
+	height:50px;
+	width:90px;
+	padding:40px 40px;
 	-webkit-transform:translate3d(0, 0, 0);
 	transform:translate3d(0, 0, 0);
 	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
@@ -108,10 +112,10 @@ a:link, a:visited, a:active {
 }
 ._layer{
 	background:#fffce6;
-	margin-bottom:4px;
+	margin-bottom:12px;
 	border-radius:2px;
-	width:28px;
-	height:4px;
+	width:90px;
+	height:12px;
 	opacity:1;
 	-webkit-transform:translate3d(0, 0, 0);
 	transform:translate3d(0, 0, 0);
@@ -165,7 +169,7 @@ a:link, a:visited, a:active {
   .menuppal ul li { 
 	  list-style: none;
 	  text-align:center;
-	  font-size:1.5rem;
+	  font-size:4em;
 	  line-height:3em;
 	  height:3em;
 	  text-transform:none;
@@ -692,6 +696,97 @@ video {
 	ol li img {
 		width: 100%;
 	}
+
+	.logo {
+		width: 300px;;
+	}
+
+	.portada .titular p {
+		font-size: 5em;
+	}
+
+	h1 {
+		font-size: 3.5em;
+    	line-height: 70px;
+	}
+
+	h2 {
+		font-size: 3em;
+    	line-height: 65px;
+	}
+
+	h3 {
+		font-size: 2.5em;
+    	line-height: 45px;
+	}
+
+	p {
+		font-size: 2.5em;
+		line-height: 65px;
+	}
+
+	.sm_txt {
+		font-size: 1.1em;
+		line-height: 35px;
+	}
+
+	.tit-card p {
+		font-size: 1.6em;
+		line-height: 1.4em;
+	}
+
+	.card-text {
+		font-size: 2em;
+		margin-top: 0;
+	}
+
+	.boton_categorias {
+		padding: 25px 20px;
+		font-size: 3em;
+	}
+
+	.sep_btn {
+		margin: 70px 0;
+	}
+
+	.img-travel {
+		height: 300px;
+	}
+
+	header .cabecera {
+		min-height: 260px;
+	}
+
+	.ct blockquote p {
+		line-height: 35px;
+		font-size: 1.5em;
+	}
+
+	.ct {
+		height: 350px;
+	}
+
+	.sp-mask.sp-grab {
+		min-height: 450px;
+	}
+
+	.tit-card p {
+		font-size: 2em;
+	}
+
+	ul li {
+		font-size: 2em;
+		line-height: 70px;
+	}
+
+	.next-link a {
+		font-size: 2em;
+	}
+
+	video {
+		width: 100%;
+	}
+
 }
 
 
