@@ -1208,7 +1208,7 @@ ol li h3, ol li p {
 	text-align: left;
 }
 
-ol li p{
+ol li p {
 	font-weight: normal;
 	margin-bottom: 35px;
 }
@@ -1476,6 +1476,10 @@ video {
 
 	video {
 		width: 100%;
+	}
+
+	ol li::marker {
+		font-size: 2.5em;
 	}
 
 }
