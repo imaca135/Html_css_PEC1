@@ -6,7 +6,7 @@
 // anything defined in a previous bundle is accessed via the
 // orig method which is the require for previous bundles
 
-(function(modules, entry, mainEntry, parcelRequireName, globalName) {
+(function (modules, entry, mainEntry, parcelRequireName, globalName) {
   /* eslint-disable no-undef */
   var globalObject =
     typeof globalThis !== 'undefined'
@@ -99,9 +99,9 @@
   newRequire.modules = modules;
   newRequire.cache = cache;
   newRequire.parent = previousRequire;
-  newRequire.register = function(id, exports) {
+  newRequire.register = function (id, exports) {
     modules[id] = [
-      function(require, module) {
+      function (require, module) {
         module.exports = exports;
       },
       {},
@@ -109,7 +109,7 @@
   };
 
   Object.defineProperty(newRequire, 'root', {
-    get: function() {
+    get: function () {
       return globalObject[parcelRequireName];
     },
   });
@@ -131,7 +131,7 @@
 
       // RequireJS
     } else if (typeof define === 'function' && define.amd) {
-      define(function() {
+      define(function () {
         return mainExports;
       });
 
@@ -2549,8 +2549,8 @@ function hmrAcceptRun(bundle, id) {
         },
         // Show the animated layers from the slide at the specified index,
         // and fire an event when all the layers from the slide become visible.
-        showLayers: function(index) {
-            var that = this, animatedLayers = this.slides[index].animatedLayers, layerCounter = 0;
+        showLayers: function(index1) {
+            var that = this, animatedLayers = this.slides[index1].animatedLayers, layerCounter = 0;
             if (typeof animatedLayers === 'undefined') return;
             $.each(animatedLayers, function(index, element) {
                 // If the layer is already visible, increment the counter directly, else wait 
@@ -2584,8 +2584,8 @@ function hmrAcceptRun(bundle, id) {
         },
         // Hide the animated layers from the slide at the specified index,
         // and fire an event when all the layers from the slide become invisible.
-        hideLayers: function(index) {
-            var that = this, animatedLayers = this.slides[index].animatedLayers, layerCounter = 0;
+        hideLayers: function(index2) {
+            var that = this, animatedLayers = this.slides[index2].animatedLayers, layerCounter = 0;
             if (typeof animatedLayers === 'undefined') return;
             $.each(animatedLayers, function(index, element) {
                 // If the layer is already invisible, increment the counter directly, else wait 
@@ -3789,21 +3789,21 @@ function hmrAcceptRun(bundle, id) {
             }
         },
         // Called when the thumbnail scroller starts being dragged
-        _onThumbnailTouchStart: function(event) {
+        _onThumbnailTouchStart: function(event1) {
             // Return if a 'mousedown' event follows a 'touchstart' event
-            if (event.type === 'mousedown' && this.thumbnailPreviousStartEvent === 'touchstart') {
-                this.thumbnailPreviousStartEvent = event.type;
+            if (event1.type === 'mousedown' && this.thumbnailPreviousStartEvent === 'touchstart') {
+                this.thumbnailPreviousStartEvent = event1.type;
                 return;
             }
             // Assign the new 'start' event
-            this.thumbnailPreviousStartEvent = event.type;
+            this.thumbnailPreviousStartEvent = event1.type;
             // Disable dragging if the element is set to allow selections
-            if ($(event.target).closest('.sp-selectable').length >= 1) return;
-            var that = this, eventObject = typeof event.originalEvent.touches !== 'undefined' ? event.originalEvent.touches[0] : event.originalEvent;
+            if ($(event1.target).closest('.sp-selectable').length >= 1) return;
+            var that = this, eventObject = typeof event1.originalEvent.touches !== 'undefined' ? event1.originalEvent.touches[0] : event1.originalEvent;
             // Prevent default behavior for mouse events
-            if (typeof event.originalEvent.touches === 'undefined') event.preventDefault();
+            if (typeof event1.originalEvent.touches === 'undefined') event1.preventDefault();
             // Disable click events on links
-            $(event.target).parents('.sp-thumbnail-container').find('a').one('click.' + NS, function(event) {
+            $(event1.target).parents('.sp-thumbnail-container').find('a').one('click.' + NS, function(event) {
                 event.preventDefault();
             });
             // Get the initial position of the mouse pointer and the initial position
@@ -3858,7 +3858,7 @@ function hmrAcceptRun(bundle, id) {
             this._moveThumbnailsTo(this.thumbnailTouchStartPosition + distance, true);
         },
         // Called when the thumbnail scroller is released
-        _onThumbnailTouchEnd: function(event) {
+        _onThumbnailTouchEnd: function(event2) {
             var that = this, thumbnailTouchDistance = this.thumbnailsOrientation === 'horizontal' ? this.thumbnailTouchDistance.x : this.thumbnailTouchDistance.y;
             // Remove the move and end listeners
             this.$thumbnails.off(this.thumbnailTouchSwipeEvents.moveEvent);
@@ -3867,16 +3867,16 @@ function hmrAcceptRun(bundle, id) {
             this.$thumbnails.removeClass('sp-grabbing').addClass('sp-grab');
             // Check if there is intention for a tap/click
             if (this.isThumbnailTouchMoving === false || this.isThumbnailTouchMoving === true && Math.abs(this.thumbnailTouchDistance.x) < 10 && Math.abs(this.thumbnailTouchDistance.y) < 10) {
-                var targetThumbnail = $(event.target).hasClass('sp-thumbnail-container') ? $(event.target) : $(event.target).parents('.sp-thumbnail-container'), index = targetThumbnail.index();
+                var targetThumbnail = $(event2.target).hasClass('sp-thumbnail-container') ? $(event2.target) : $(event2.target).parents('.sp-thumbnail-container'), index = targetThumbnail.index();
                 // If a link is cliked, navigate to that link, else navigate to the slide that corresponds to the thumbnail
-                if ($(event.target).parents('a').length !== 0) {
-                    $(event.target).parents('a').off('click.' + NS);
+                if ($(event2.target).parents('a').length !== 0) {
+                    $(event2.target).parents('a').off('click.' + NS);
                     this.$thumbnailsContainer.removeClass('sp-swiping');
                 } else if (index !== this.selectedThumbnailIndex && index !== -1) this.gotoSlide(index);
                 return;
             }
             this.isThumbnailTouchMoving = false;
-            $(event.target).parents('.sp-thumbnail').one('click', function(event) {
+            $(event2.target).parents('.sp-thumbnail').one('click', function(event) {
                 event.preventDefault();
             });
             // Remove the 'sp-swiping' class but with a delay
