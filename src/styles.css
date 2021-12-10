@@ -254,7 +254,8 @@ nav ul {
 
 
 .portada .titular p {
-	color: #333333;
+	/*color: #333333;*/
+	color: #050300; /* Recomendado */
   	font-size: 2.5em;
   	font-weight: 800;
 	line-height: 1.23em;
@@ -367,9 +368,11 @@ overflow: hidden;
     font-weight: 600;
     font-size: 1em;
     color: #fffce6;
-    background-color: #e39b16;
+    /*background-color: #e39b16;*/
+	background-color: #050300; /* Recomendado */
     border-radius: 6px;
-    border: 1px solid #e39b16;
+    /*border: 1px solid #e39b16;*/
+	border: 1px solid #050300; /* Recomendado */
   }
   .boton_categorias:hover{
     color: #fffce6;
@@ -403,7 +406,8 @@ overflow: hidden;
 }
 
 .card-text {
-	color: #e39b16;
+	/*color: #e39b16;*/
+	color: #050300; /* Color recomendado */
     font-size: 1.3em;
     font-weight: 800;
     text-align: center;
