@@ -1208,9 +1208,7 @@ header .cabecera {
 
 #cat-html a:hover .card-img-top {
 	transform: scale(1.01);
-	-moz-transform: scale(1.01);
 	filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
 	overflow: hidden;
 	 
 	}
@@ -1230,7 +1228,7 @@ ol li p {
 	margin-bottom: 35px;
 }
 
-ol li img {
+#auckland-html ol li img {
 	width: 65%;
 }
 
@@ -1468,7 +1466,7 @@ footer .opc {
 		line-height: 40px;
 	}
 
-	ol li img {
+	#auckland-html ol li img {
 		width: 100%;
 	}
 
