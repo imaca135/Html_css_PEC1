@@ -477,11 +477,6 @@ function toggleMenu(event) {
 }
 // Hacer que la imagen de portada ocupe el 100% de la pantalla
 menu.addEventListener('click', toggleMenu, false);
-document.addEventListener('DOMContentLoaded', function() {
-    let w = window, d = document, e = d.documentElement, g = d.getElementsByTagName('body')[0], x = w.innerWidth || e.clientWidth || g.clientWidth, y = w.innerHeight || e.clientHeight || g.clientHeight;
-    let img = document.getElementById('img-portada');
-    if (img !== null) img.style.height = `${y}px`;
-}, false);
 
 },{"1397f4339aa7928e":"2lYDE","334118f8dc385f55":"epyjv"}],"2lYDE":[function(require,module,exports) {
 module.exports = require("./helpers/browser/js-loader")(require('./helpers/bundle-url').getBundleURL('9ZZPF') + "jquery.d7b5dd6a.js" + "?" + Date.now()).catch((err)=>{
