@@ -182,7 +182,7 @@ a:link, a:visited, a:active {
 
 header .portada {  
 
-	background:url('img/kiwi_noche.jpg') center center no-repeat;    
+	background:url('img/kiwi_noche.webp') center center no-repeat;    
     min-height:100%;
     background-size:cover; 
 	display: flex;
