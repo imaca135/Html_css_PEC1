@@ -22,5 +22,5 @@ function toggleMenu (event) {
 // Hacer que la imagen de portada ocupe el 100% de la pantalla
 menu.addEventListener('click', toggleMenu, false);
 
-
+document.addEventListener('touchstart', onTouchStart, {passive: true});
 
