@@ -1,6 +1,6 @@
 @import 'npm:slider-pro/dist/css/slider-pro.css';
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat,Montserrat:wght@700&display=swap');
 
 html {
 	
@@ -748,8 +748,8 @@ footer .opc {
 	}
 
 	span.txt_head {
-		font-size: 2em;
-		left: -70px;
+		font-size: 2.5em;
+		left: -100px;
 		line-height: 40px;
 	}
 
@@ -758,7 +758,12 @@ footer .opc {
 	}
 
 	.logo {
-		width: 300px;;
+		width: 200px;
+		height: 139px;
+	}
+
+	.navbar {
+		padding: 75px 10px 15px 10px;
 	}
 
 	.portada .titular p {
