@@ -1,9 +1,11 @@
 @import 'npm:slider-pro/dist/css/slider-pro.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 html {
-	font-family: 'Montserrat', sans-serif;
+	
 	font-size: 1em;
-	font-display: swap;
+	font-family: 'Montserrat', sans-serif;
 	color: #333333;
 	line-height: 1.6em;
 }
