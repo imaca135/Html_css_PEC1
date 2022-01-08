@@ -20,7 +20,7 @@ a:link, a:visited, a:active {
 
 .logo {
 	width: 150px;
-	height: auto;
+	height: 104px;
 }
 
 .container {
@@ -437,6 +437,7 @@ overflow: hidden;
 
 .img-travel {
     height: 210px;
+	width: 518px;
     object-fit: cover;
     object-position: center;
 }
@@ -690,6 +691,7 @@ footer .opc {
 
 .rotating {
 	height: 50px;
+	width:72px;
 	animation: rotating 10s linear infinite;
 }
 
