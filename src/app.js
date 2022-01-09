@@ -11,7 +11,6 @@ import("jquery").then(async (jquery) => {
 
 // Menú hamburguesa
 var menu = document.querySelector('.hamburger');
-console.log(menu);
 
 function toggleMenu (event) {
   this.classList.toggle('is-active');

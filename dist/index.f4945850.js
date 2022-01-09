@@ -469,7 +469,6 @@ require("1397f4339aa7928e").then(async (jquery)=>{
 });
 // Menú hamburguesa
 var menu = document.querySelector('.hamburger');
-console.log(menu);
 function toggleMenu(event) {
     this.classList.toggle('is-active');
     document.querySelector(".menuppal").classList.toggle("is_active");
